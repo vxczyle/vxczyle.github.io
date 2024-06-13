@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,25 +17,56 @@
             text-decoration: underline;
             margin-top: 5px;
         }
+        .flash-image {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        .fade {
+            animation: fadeOut 2s forwards;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
     </style>
 </head>
 <body>
 	<center>
 		<h1>H-hi Jamie UwU</h1>
 		<h1>hiiiiii bicycle man uwu</h1>
-		<img src="Assets/deleted.jpg"></img>
+		<img src="Assets/deleted.jpg" alt="deleted image">
 		<div class="advertisement">
 		<a href="https://rule34.xxx/">
-		<img src="Assets/gambling.jpg" height="200"></img>
+		<img src="Assets/gambling.jpg" height="200" alt="advertisement">
 		</a>
 		<div class="advertisement-text">Advertisement</div>
 		</div><br>
 		<button onclick="vxczylesCoolFunction()">Open other website</button>
 	</center>
+	
+	<button id="flashButton" style="position: fixed; top: 10px; left: 10px;" onclick="flashImage()">Show Image</button>
+	<img id="spookedCarImage" class="flash-image" src="Assets/spookedcar.jpg" alt="spooked car">
+	<audio id="spookSound" src="Assets/hamvorger.mp3"></audio>
+
 	<script>
 		function vxczylesCoolFunction(){
 			window.location.href="https://vxczyle.000webhostapp.com/#home";
-			console.log("Redirection Succesful")
+			console.log("Redirection Successful");
+		}
+
+		function flashImage() {
+			const img = document.getElementById('spookedCarImage');
+			const audio = document.getElementById('spookSound');
+			img.style.display = 'block';
+			img.classList.add('fade');
+			audio.play();
+			setTimeout(() => {
+				img.style.display = 'none';
+				img.classList.remove('fade');
+			}, 1000);
 		}
 	</script>
 </body>
