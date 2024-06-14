@@ -6,16 +6,34 @@
     <meta name="description" content="random github website hi there">
     <title>vxczyle</title>
 	<style>
+		.rainbow {
+			background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+			background-clip: text;
+			color: transparent;
+			-webkit-text-fill-color: transparent;
+			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		.head {
+			width: 500px;
+			height: 50px;
+			border: 1px solid black;
+			padding: 10px;
+			margin: 10px;
+			align-self: top center;
+			align-content: center;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
         .advertisement {
             position: fixed;
-            top: 10px;
-            right: 10px;
+            bottom: 10px;
+            left: 10px;
             text-align: center;
         }
         .advertisement-text {
             color: gray;
             text-decoration: underline;
             margin-top: 5px;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .flash-image {
             position: fixed;
@@ -35,20 +53,27 @@
 </head>
 <body>
 	<center>
-		<h1>H-hi Jamie UwU</h1>
-		<h1>hiiiiii bicycle man uwu</h1>
+	<header>
+		<div class="head" style="text-align: center; align-self: top;">
+		<a href="https://youtube.com/@vxczyle">My Youtube I guess?  </a>
+		<a href="https://youtube.com/@JamieVegan">Jamie's Youtube :)  </a>
+		<a href="https://vxczyle.000webhostapp.com">Other dumb website  </a>
+		</div>
+	</header>
+	</center>
+	<center>
+		<h1 class="rainbow">Welcome to uhh me and Jamie's website</h1>
 		<img src="Assets/deleted.jpg" alt="deleted image">
 		<div class="advertisement">
 		<a href="https://snabbare.com">
 		<img src="Assets/gambling.jpg" height="200" alt="advertisement">
 		</a>
 		<div class="advertisement-text">Advertisement</div>
-		</div><br>
-		<button onclick="vxczylesCoolFunction()">Open other website</button>
+		</div>
 	</center>
 	
-	<button id="flashButton" style="position: fixed; top: 10px; left: 10px;" onclick="flashImage()">Show Image</button>
-	<img id="spookedCarImage" class="flash-image" src="Assets/spookedcar.jpg" alt="spooked car">
+	<button id="flashButton" style="position: fixed; bottom: 10px; right: 10px;" onclick="flashImage();" onclick="document.getElementById='flashButton'.window.alert('haha scared you')">What Does This Do?</button>
+	<img id="spookedCarImage" class="flash-image" src="Assets/spookedcar.jpg" alt="spooked cat">
 	<audio id="spookSound" src="Assets/hamvorger.mp3"></audio>
 
 	<script>
