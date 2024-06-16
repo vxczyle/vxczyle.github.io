@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="random github website hi there">
     <title>vxczyle</title>
-	<style>
-		.fisher {
-			align-self: top;
-		}
-		.rainbow {
-			background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-			background-clip: text;
-			color: transparent;
-			-webkit-text-fill-color: transparent;
-			font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			align-self: top;
-		}
-		.head {
-			width: 200px;
-			height: 60pxpx;
-			border: 1px solid black;
-			padding: 10px;
-			margin: 10px;
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			font-size: 20px;
-			text-align: left bottom;
-		}
+    <style>
+        .rainbow {
+            background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .head {
+            width: 250px;
+            height: auto;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+        }
         .advertisement {
             position: fixed;
             bottom: 10px;
@@ -37,7 +36,7 @@
             color: gray;
             text-decoration: underline;
             margin-top: 5px;
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .flash-image {
             position: fixed;
@@ -55,49 +54,48 @@
         }
     </style>
 </head>
-<body>
-		<div class="head" style="text-align: center; align-self: top;">
-		<a href="https://youtube.com/@vxczyle">My Youtube I guess?  </a><br>
-		<a href="https://youtube.com/@JamieVegan">Jamie's Youtube :)  </a><br>
-		<a href="https://vxczyle.000webhostapp.com">Other dumb website  </a><br>
-		<a href="message.html">Message me!</a>
-		</div>
-	<center>
-		<div class="fisher">
-		<header>
-		<h1 class="rainbow" style="text-align: top center;">Welcome to uhh me and Jamie's website</h1>
-		<img src="Assets/deleted.jpg" alt="deleted image">
-		<div class="advertisement">
-		<a href="https://snabbare.com">
-		<img src="Assets/gambling.jpg" height="200" alt="advertisement">
-		</a>
-		<div class="advertisement-text">Advertisement</div>
-		</div>
-		</header>
-		</div>
-	</center>
-	
-	<button id="flashButton" style="position: fixed; bottom: 10px; right: 10px;" onclick="flashImage();" onclick="document.getElementById='flashButton'.window.alert('haha scared you')">What Does This Do?</button>
-	<img id="spookedCarImage" class="flash-image" src="Assets/spookedcar.jpg" alt="spooked cat">
-	<audio id="spookSound" src="Assets/hamvorger.mp3"></audio>
+<body id="shmexy" style="background-color: antiquewhite;">
+    <header>
+        <h1 class="rainbow">Welcome to uhh me and Jamie's website</h1>
+    </header>
+    <div class="head">
+        <a href="https://youtube.com/@vxczyle">My Youtube I guess?  </a><br>
+        <a href="https://youtube.com/@JamieVegan">Jamie's Youtube :)  </a><br>
+        <a href="https://vxczyle.000webhostapp.com">Other dumb website  </a><br>
+        <a href="message.html">Message me!</a><br>
+        <a href="https://jamievegan.itch.io/billboardpractice">Play JamieVegans game!</a>
+    </div>
+    <center>
+        <div class="fisher">
+            <img src="Assets/deleted.jpg" alt="deleted image">
+        </div>
+    </center>
+    <button id="flashButton" style="position: fixed; bottom: 10px; right: 10px;" onclick="flashImage();" onclick="document.getElementById='flashButton'.window.alert('haha scared you')">What Does This Do?</button>
+    <img id="spookedCarImage" class="flash-image" src="Assets/spookedcar.jpg" alt="spooked cat">
+    <audio id="spookSound" src="Assets/hamvorger.mp3"></audio>
 
-	<script>
-		function vxczylesCoolFunction(){
-			window.location.href="https://vxczyle.000webhostapp.com/#home";
-			console.log("Redirection Successful");
+    <script>
+
+		function black() {
+			document.getElementById
 		}
 
-		function flashImage() {
-			const img = document.getElementById('spookedCarImage');
-			const audio = document.getElementById('spookSound');
-			img.style.display = 'block';
-			img.classList.add('fade');
-			audio.play();
-			setTimeout(() => {
-				img.style.display = 'none';
-				img.classList.remove('fade');
-			}, 1000);
-		}
-	</script>
+        function vxczylesCoolFunction(){
+            window.location.href="https://vxczyle.000webhostapp.com/#home";
+            console.log("Redirection Successful");
+        }
+
+        function flashImage() {
+            const img = document.getElementById('spookedCarImage');
+            const audio = document.getElementById('spookSound');
+            img.style.display = 'block';
+            img.classList.add('fade');
+            audio.play();
+            setTimeout(() => {
+                img.style.display = 'none';
+                img.classList.remove('fade');
+            }, 1000);
+        }
+    </script>
 </body>
 </html>
