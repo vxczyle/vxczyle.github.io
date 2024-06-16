@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Gift</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        .gift-box {
+            width: 150px;
+            height: 150px;
+            background: url('https://atlas-content-cdn.pixelsquid.com/stock-images/gift-box-holiday-accessories-Q95rLQF-600.jpg') no-repeat center center;
+            background-size: cover;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+        .gift-box:hover {
+            transform: scale(1.1);
+        }
+        #surprise-message {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e0ffff;
+            border: 2px solid #ff1493;
+            border-radius: 10px;
+            display: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="gayshit">Wow! A present.</h1>
+    <div class="gift-box" onclick="revealMessage()"></div>
+    <div id="surprise-message"><img src="Assets/heeheeheehee.jpg" width="250px"; height="200px"></div>
+
+    <script>
+        function revealMessage() {
+            document.querySelector('.gift-box').style.display = 'none';
+            document.getElementById('surprise-message').style.display = 'block';
+            document.getElementById('gayshit').innerHTML = "Surprise! You're a femboy now!"
+            document.body.style.backgroundColor = "#FDB0C0";
+
+        }
+    </script>
+</body>
+</html>
