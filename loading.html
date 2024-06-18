@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .sprite {
+            width: 79px; /* width of a single frame */
+            height: 190px; /* height of the sprite */
+            display: fixed;
+            background: transparent url('Assets/walking\ right.jpg') 0 0 no-repeat;
+            margin: 3em auto;
+            animation: walker 0.5s steps(3) infinite;
+            align-self: center;
+            top: auto;
+            align-content: center;
+        }
+
+        @keyframes walker {
+            from { background-position: 0 0; }
+            to { background-position: -310px 0; } /* 79px * 3 frames = 237px */
+        }
+    </style>
+</head>
+<body style="background-color: white">
+    <div class="sprite"></div>
+</body>
+</html>

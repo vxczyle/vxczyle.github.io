@@ -6,7 +6,7 @@ function Sleep(Time) {
 }
 
 function Back() {
-	window.location.href = "index.html"
+	window.location.href = "loading.html"
 }
 
 function SendMessage() {
